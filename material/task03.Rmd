@@ -1,0 +1,39 @@
+---
+title: "My first Markdown"
+author: "My name"
+date : "15.04.2019"
+output: pdf_document
+bibliography: markdown_course.bib
+fontsize: 11pt
+classoption: a4paper
+---
+
+J
+# R Markdown
+
+This is an R Markdown document. Markdown is a simple formatting syntax for authoring HTML, PDF, and MS Word documents. 
+For more details on using R Markdown see [bookdown.org/yihui/rmarkdown](https://bookdown.org/yihui/rmarkdown).
+
+## Using R and Markdown
+
+When you click the **Knit** button a document will be generated that includes both content as well as the output of any embedded R code chunks within the document.
+You can embed an R code chunk like this:
+
+```{r cars, echo=FALSE}
+m.cars <- mean(cars$speed)
+```
+
+And you can use in-line code to show your results in the text: `r m.cars`.
+
+[@bosnjak_establishing_2018]
+You could also run R calculations in the code like this `r m.cars * 2`, but ensure that your text is still readable. 
+
+| A | B | C |
+|---|---|---|
+| 1 | 2 | 3 |
+
+Table: This is an awesome table
+
+\newpage
+
+# References
